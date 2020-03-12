@@ -56,6 +56,6 @@
     "run-sequence": "^2.0.0",
     "webpack": "^4.22.0",
     "webpack-stream": "^5.1.1",
-    "yarn": "^1.10.1"
+    "yarn": "^1.22.0"
   }
 }
