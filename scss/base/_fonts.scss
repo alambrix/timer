@@ -1,0 +1,30 @@
+//  ==========================================================================
+//  Additional Font Declarations, Sizes
+//  ==========================================================================
+
+
+@include font-face("Cad Serif", '../fonts/Cadillac/CadillacSerifMedium', null, null, eot ttf woff);
+@include font-face("Cad Sans Book", '../fonts/Cadillac/CadSansBook', null, null, eot ttf woff);
+@include font-face("Cad Sans Light", '../fonts/Cadillac/CadSansLight', null, null, eot ttf woff);
+@include font-face("Cad Sans Medium", '../fonts/Cadillac/CadSansMedium', null, null, eot ttf woff);
+@include font-face("Cad Sans Thin", '../fonts/Cadillac/CadSansThin', null, null, eot ttf woff);
+
+.cad-sans-book{
+  font-family: "Cad Sans Book", "Helvetica", sans-serif;
+}
+
+.cad-serif{
+  font-family: "Cad Serif", "Helvetica", sans-serif;
+}
+
+.cad-sans-light{
+  font-family: "Cad Sans Light", "Helvetica", sans-serif;
+}
+
+.cad-sans-medium{
+  font-family: "Cad Sans Medium", "Helvetica", sans-serif;
+}
+
+.cad-sans-thin{
+  font-family: "Cad Sans Thin", "Helvetica", sans-serif;
+}

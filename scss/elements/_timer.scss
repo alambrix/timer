@@ -1,0 +1,125 @@
+.countdown-timer{
+  @include breakpoint(medium up){
+    height: 350px;
+  }
+  @include breakpoint(large up){
+    height: 550px;
+  }
+  @include breakpoint(xlarge up){
+    height: 750px;
+  }
+  height: 250px;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  &::after{
+    position: absolute;
+    top:0;
+    left:0;
+    background: rgba(black, .35);
+    width: 100%;
+    height: 100%;
+    content: '';
+  }
+  >.columns > .row{
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.no-matte{
+  &::after{
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.timer__value{
+  @include breakpoint(medium up){
+    min-width: 60px;
+  }
+  @include breakpoint(large up){
+    font-size: 9.3rem;
+    min-width: 180px;
+  }
+  color: white;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  text-shadow: 0px 1px 1px black;
+  @extend .cad-sans-light;
+}
+
+.timer__key{
+  @include breakpoint(large up){
+    padding-left: .5rem;
+    font-size: 1.4rem;
+  }
+  color: white;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 0px 1px 1px black;
+  margin-top: 1rem;
+  @extend .cad-sans-book;
+}
+
+.timer__heading{
+  @include breakpoint(small down){
+    font-size: .7rem;
+    letter-spacing: 2px;
+  }
+  color: white;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 1px black;
+  margin-bottom: 1rem;
+  @extend .cad-sans-book;
+}
+
+.timer__reveal{
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  @extend .cad-sans-book;
+}
+
+.timer__disclaimer{
+  position: absolute;
+  bottom:1rem;
+  left:1rem;
+  z-index: 2;
+  color: white;
+  letter-spacing: 1.5px;
+  @extend small;
+  @extend .cad-sans-light;
+}
+
+.hidden{
+  display: none;
+  visibility: hidden;
+}
+
+.medium-shrink{
+  @include breakpoint(medium up){
+    flex: flex-grid-column(shrink);
+    max-width: 100%;
+  }
+}
+
+.animate{
+  transition-duration: .5s;
+  transition-property: all;
+  transition-timing-function: ease-in;
+  filter: blur(10px);
+  opacity: 0;
+}
+
+.animateIn{
+  opacity: 1;
+  filter: blur(0px);
+}
+
+#master{
+  z-index: 999;
+}
